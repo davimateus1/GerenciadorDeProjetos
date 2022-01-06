@@ -1,20 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-import Input from '../form/Input/Input';
-import Select from '../form/Select/Select';
-import SubmitButton from '../form/SubmitButton/SubmitButton';
-import styles from './ProjectForm.module.css';
+import Input from "../form/Input/Input";
+import Select from "../form/Select/Select";
+import SubmitButton from "../form/SubmitButton/SubmitButton";
+import styles from "./ProjectForm.module.css";
 
-function ProjectForm({ btnText }) {
-
+function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([]);
+  const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
     fetch("http://localhost:5000/categories", {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json'
-      }
+        "Content-Type": "application/json",
+      },
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -23,11 +23,50 @@ function ProjectForm({ btnText }) {
       .catch((err) => console.log(err));
   }, []);
 
+  const submit = (e) => {
+    e.preventDefault();
+    handleSubmit(project);
+  };
+
+  function handleChange(e) {
+    setProject({ ...project, [e.target.name]: e.target.value });
+  }
+
+  function handleCategory(e) {
+    setProject({
+      ...project,
+      category: {
+        id: e.target.value,
+        name: e.target.options[e.target.selectedIndex].text,
+      },
+    });
+  }
+
   return (
-    <form className={styles.form}>
-      <Input type="text" text="Nome do Projeto" name="name" placeholder="Informe o nome do Projeto" />
-      <Input type="number" text="Orçamento do Projeto" name="budget" placeholder="Informe o Orçamento total do Projeto" />
-      <Select name="category_id" text="Selecione a Categoria" options={categories} />
+    <form onSubmit={submit} className={styles.form}>
+      <Input
+        type="text"
+        text="Nome do Projeto"
+        name="name"
+        placeholder="Informe o nome do Projeto"
+        handleOnChange={handleChange}
+        value={project.name ? project.name : ''}
+      />
+      <Input
+        type="number"
+        text="Orçamento do Projeto"
+        name="budget"
+        placeholder="Informe o Orçamento total do Projeto"
+        handleOnChange={handleChange}
+        value={project.budget ? project.budget : ''}
+      />
+      <Select
+        name="category_id"
+        text="Selecione a Categoria"
+        options={categories}
+        handleOnChange={handleCategory}
+        value={project.category ? project.category.id : ''}
+      />
       <SubmitButton text={btnText} />
     </form>
   );
