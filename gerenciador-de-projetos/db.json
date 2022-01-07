@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Projeto Fullstack ",
-      "budget": "14500",
+      "name": "Projeto FrontEndd",
+      "budget": "20000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
