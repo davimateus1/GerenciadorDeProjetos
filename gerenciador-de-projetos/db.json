@@ -23,6 +23,12 @@
       "id": 2
     },
     {
+      "name": "Projeto Valendo",
+      "budget": "5000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
       "cost": 0,
       "services": [],
       "id": 3

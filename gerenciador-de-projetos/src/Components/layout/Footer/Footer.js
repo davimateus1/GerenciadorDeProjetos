@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import styles from "../../layout/Footer/Footer.module.css";
@@ -7,13 +9,19 @@ function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
         <li>
-          <FaInstagram />
+          <a href="https://www.instagram.com/davimateus1/" target="_blank">
+            <FaInstagram />
+          </a>
         </li>
         <li>
-          <FaGithub />
+          <a href="https://github.com/davimateus1" target="_blank">
+            <FaGithub />
+          </a>
         </li>
         <li>
-          <FaLinkedin />
+          <a href="https://www.linkedin.com/in/davimateusg/" target="_blank">
+            <FaLinkedin />
+          </a>
         </li>
       </ul>
       <p className={styles.copyright}>
