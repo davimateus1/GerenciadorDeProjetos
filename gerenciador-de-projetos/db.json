@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Projeto FrontEndd",
-      "budget": "20000",
+      "name": "Projeto FrontEnd",
+      "budget": "22000",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
