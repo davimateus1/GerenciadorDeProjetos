@@ -7,8 +7,27 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 300,
+      "services": [
+        {
+          "name": "davi",
+          "cost": "100",
+          "description": "sad",
+          "id": "029f1ac4-32fc-4ff5-a8c2-7cb7f140e3cd"
+        },
+        {
+          "name": "Serviço 2",
+          "cost": "100",
+          "description": "DASD",
+          "id": "5451a2b5-84cd-49a0-bcca-e4e26dc1b6e8"
+        },
+        {
+          "name": "Serviço 2",
+          "cost": "100",
+          "description": "DASD",
+          "id": "5451a2b5-84cd-49a0-bcca-e4e26dc1b6e8"
+        }
+      ],
       "id": 1
     }
   ],
