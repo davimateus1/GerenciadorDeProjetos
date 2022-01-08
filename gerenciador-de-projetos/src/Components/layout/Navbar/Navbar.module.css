@@ -5,6 +5,15 @@
     padding: 1em;
 }
 
+.logo{
+    transition: all 0.5s;
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .list{
     display: flex;
     list-style: none;
@@ -13,8 +22,14 @@
 
 .item {
     margin-right: 1em;
-
+    transition: all 0.5s;
 }
+
+.item:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 
 .item a{
     color: #fff;

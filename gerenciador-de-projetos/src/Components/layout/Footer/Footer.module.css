@@ -17,15 +17,16 @@
     cursor: pointer;
 }
 
-.social_list li:hover{
-    color: #ffbb33;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 .social_list svg{
     font-size: 1.5em;
     color: white;
+    transition: all 0.5s
+}
+
+.social_list svg:hover{
+    color: #ffbb33;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .copyright{

@@ -1,58 +1,37 @@
 {
   "projects": [
     {
-      "name": "Projeto FrontEnd",
-      "budget": "22000",
+      "name": "Fullstack",
+      "budget": "5000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Planejamento"
       },
-      "cost": 300,
-      "services": [
-        {
-          "name": "davi",
-          "cost": "100",
-          "description": "sad",
-          "id": "029f1ac4-32fc-4ff5-a8c2-7cb7f140e3cd"
-        },
-        {
-          "name": "Serviço 2",
-          "cost": "100",
-          "description": "DASD",
-          "id": "5451a2b5-84cd-49a0-bcca-e4e26dc1b6e8"
-        },
-        {
-          "name": "Serviço 2",
-          "cost": "100",
-          "description": "DASD",
-          "id": "5451a2b5-84cd-49a0-bcca-e4e26dc1b6e8"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 1
     },
     {
-      "name": "Fullstack",
-      "budget": "1200",
+      "name": "Machine Learning",
+      "budget": "4750",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": null,
-      "services": [
-        {
-          "name": "Frontend",
-          "cost": "600",
-          "description": "Desenvolver um sistema responsivo consumindo uma API de dados",
-          "id": "95f9b8fa-fd42-4d74-ab83-223164b66434"
-        },
-        {
-          "name": "Backend",
-          "cost": "600",
-          "description": "Desenvolver a lógica, armazenar dados em um banco de Dados e criar uma API para consumo",
-          "id": "4462db68-0b26-4b94-9c27-c97ea2cd8ccd"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 2
+    },
+    {
+      "name": "Sistema Arduino",
+      "budget": "3000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [

@@ -10,11 +10,11 @@ function Navbar() {
     <nav className={styles.navbar}>
       <Container>
         <Link to="/">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className={styles.logo}/>
         </Link>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Link to="/">Home</Link>
+            <Link to="/">Inicio</Link>
           </li>
           <li className={styles.item}>
             <Link to="/projects">Projetos</Link>
