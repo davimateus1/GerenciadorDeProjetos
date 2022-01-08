@@ -29,6 +29,36 @@
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Fullstack",
+      "budget": "1200",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1101,
+      "services": [
+        {
+          "name": "Davi Mateus ",
+          "cost": "1",
+          "description": "2",
+          "id": "8bda2aed-47ff-45d9-8fb2-4b8799fb1381"
+        },
+        {
+          "name": "Frontend",
+          "cost": "500",
+          "description": "Estruturar e criar a parte visual do site consumindo dados de uma API",
+          "id": "1c225182-eedb-42d7-beab-a65f1de1cc86"
+        },
+        {
+          "name": "Backend",
+          "cost": "600",
+          "description": "Fazer a lógica, armazenar dados em um banco de dados MySQL e criar uma API para consumo",
+          "id": "d8671d92-e1b1-407f-a1de-6c2a56727531"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
