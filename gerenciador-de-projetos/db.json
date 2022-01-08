@@ -37,25 +37,19 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1101,
+      "cost": null,
       "services": [
         {
-          "name": "Davi Mateus ",
-          "cost": "1",
-          "description": "2",
-          "id": "8bda2aed-47ff-45d9-8fb2-4b8799fb1381"
-        },
-        {
           "name": "Frontend",
-          "cost": "500",
-          "description": "Estruturar e criar a parte visual do site consumindo dados de uma API",
-          "id": "1c225182-eedb-42d7-beab-a65f1de1cc86"
+          "cost": "600",
+          "description": "Desenvolver um sistema responsivo consumindo uma API de dados",
+          "id": "95f9b8fa-fd42-4d74-ab83-223164b66434"
         },
         {
           "name": "Backend",
           "cost": "600",
-          "description": "Fazer a lógica, armazenar dados em um banco de dados MySQL e criar uma API para consumo",
-          "id": "d8671d92-e1b1-407f-a1de-6c2a56727531"
+          "description": "Desenvolver a lógica, armazenar dados em um banco de Dados e criar uma API para consumo",
+          "id": "4462db68-0b26-4b94-9c27-c97ea2cd8ccd"
         }
       ],
       "id": 2
